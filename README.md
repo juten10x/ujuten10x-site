@@ -1,2 +1,2 @@
-# ujuten10x.netlify.app
-[ujuten10x.netlify.app](ujuten10x.netlify.app)
+# ujuten10x-site
+[u.juten10x.net](https://u.juten10x.net/)
