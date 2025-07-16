@@ -23,9 +23,6 @@ a.mya:hover {
 img {
   border-radius: .3rem;
 }
-figcaption {
-  font-size: 14px;
-}
 details {
   margin-bottom: 16px;
 }
@@ -115,6 +112,10 @@ h3 {
   .image3 {
     width: 48%;
   }
+  figcaption {
+    margin-top: -4px;
+    font-size: 14px;
+  }
   #breadcrumbs {
     font-weight: 300;
   }
@@ -133,16 +134,20 @@ h3 {
   body {
     margin: 0% 5% 5% 5%;
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    font-size: 15px;
     letter-spacing: 0.03rem;
     line-height: 1.8;
     color: var(--font-color);
     background-color: var(--b-color);
   }
-  figure {
-    margin: 0;
-  }
   h2 {
     line-height: 1.4;
+  }
+  h2.beforeImage {
+    margin: 0 0 0.5px 0;
+  }
+  h3.beforeImage {
+    margin: 8px 0 -2px 0;
   }
   .image1 {
     width: 100%;
@@ -153,11 +158,18 @@ h3 {
   .image3 {
     width: 100%;
   }
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    margin-top: -4px;
+    font-size: 12px;
+  }
   #menu, #menu2 {
     display: none;
   }
   #main {
-    margin: 14% 0 0 0;
+    margin: 10% 0 0 0;
   }
   #menu_forPhone {
     user-select: none;
