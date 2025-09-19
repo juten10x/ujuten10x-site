@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
 
 :root {
-  --font-color: black;
-  --b-color: white;
-  --link-color: royalblue;
+  --font-color: #000;
+  --b-color: #fff;
+  --link-color: #4169e1;
 }
 a {
   color: var(--link-color);
@@ -12,8 +12,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a[href*="//"] {
+  text-decoration: dotted underline;
+}
+a[href*="//"]:hover {
+  text-decoration: underline;
+}
+a[href^="https://u.juten10x.net/"],
+a[href^="https://juten10x.net/"],
+a.mya[href^="https://u.juten10x.net/"] {
+  text-decoration: none;
+}
 a.mya {
-  color: black; 
+  color: #000; 
   transition: all .3s ease-in-out;
   text-decoration: none;
 }
@@ -33,7 +44,7 @@ code {
   font-family: 'Inconsolata', 'Noto Sans JP';
   font-weight: 500;
   line-height: 1.4;
-  border: solid lightgray 1px;
+  border: solid #d3d3d3 1px;
   border-radius: .3rem;
 }
 hr {
@@ -80,7 +91,7 @@ button.hoge {
   height: 2px;
   width: 100%;
   margin: 12px 0;
-  background-color: lightgray;
+  background-color: #d3d3d3;
 }
 h2 {
   margin: 0 0 -8px 0;
@@ -214,6 +225,7 @@ h3 {
     top: 25px;
     left: 0;
     opacity: 0;
+    visibility: hidden;
     z-index: 1;
     /*transform: scale(1, 0);*/
     transform-origin: top;
@@ -236,8 +248,8 @@ h3 {
     left: -5%;
     width: 110%;
     height: 55px;
-    background-color: white;
-    border: solid black 1.5px;
+    background-color: #fff;
+    border: solid #000 1.5px;
     transform-origin: center;
     transition: all .3s ease;
   }
@@ -264,7 +276,7 @@ h3 {
     width: 100%;
     height: 2px;
     transition: all .3s ease;
-    background-color: black;
+    background-color: #000;
   }
   .btn span:nth-of-type(1) {
     top: 0;
@@ -274,7 +286,7 @@ h3 {
   }
 
   .i-btn:checked ~ #btn span {
-    background-color: royalblue;
+    background-color: #4169e1;
   }
   .i-btn:checked ~ #btn span:nth-of-type(1) {
     transform: translate(0, 6px) rotate(-35deg);
@@ -283,11 +295,12 @@ h3 {
     transform: translate(0, -6px) rotate(35deg);
   }
   .i-btn:checked ~ #menu_board {
-    border: solid royalblue 1.5px;
+    border: solid #4169e1 1.5px;
     height: 110px;
   }
   .i-btn:checked ~ #menu_list {
     opacity: 1;
+    visibility: visible;
     transition: opacity .3s ease-in .1s;
     /*transform: scale(1, 1);*/
   }
