@@ -150,8 +150,8 @@ h3 {
     margin-top: -4px;
     font-size: 14px;
   }
-  #breadcrumbs {
-    font-weight: 300;
+  .breadcrumbs {
+    line-height: 2.0;
   }
   #menu_forPhone {
     display: none;
@@ -295,6 +295,10 @@ h3 {
     transform: translate(0, -6px) rotate(35deg);
   }
   .i-btn:checked ~ #menu_board {
+    border: solid #4169e1 1.5px;
+    height: 150px;
+  }
+  .i-btn:checked ~ #menu_board2 {
     border: solid #4169e1 1.5px;
     height: 110px;
   }
