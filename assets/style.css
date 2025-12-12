@@ -93,6 +93,9 @@ button.hoge {
   margin: 12px 0;
   background-color: #d3d3d3;
 }
+h1,h2 {
+  font-weight: 600;
+}
 h2 {
   margin: 0 0 -8px 0;
 }
@@ -145,6 +148,9 @@ h3 {
   }
   .image3 {
     width: 48%;
+  }
+  .image4 {
+    width: 80%;
   }
   figcaption {
     margin-top: -4px;
